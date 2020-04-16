@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+     
+     function divisionNum(num) {
+        let numberList = [];
+        let output;
+        for (let i = 1; i <= num; i++) {
+          if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
+            output = "yu-gi-oh"
+          } else if (i % 2 === 0 && i % 3 === 0) {
+            output = "yu-gi"
+          } else if (i % 2 === 0 && i % 5 === 0) {
+            output = "yu-oh"
+          } else if (i % 3 === 0 && i % 5 === 0) {
+            output = "gi-oh"
+          } else if (i % 2 === 0) {
+            output = "yu"
+          } else if (i % 3 === 0) {
+            output = "gi"
+          } else if (i % 5 === 0) {
+            output = "oh"
+          } else { output = i}
+        
+         numberList.push(output);
+          
+        };
+        console.log(numberList)
+        return numberList;
+      };
+      divisionNum(100);
+      divisionNum(25);
+      
+     
+
+      
+    </script>
+  </body>
+</html>
